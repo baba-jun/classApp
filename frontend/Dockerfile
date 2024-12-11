@@ -34,4 +34,4 @@ RUN apk update && apk add git
 EXPOSE 3000
 
 # Start the app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
