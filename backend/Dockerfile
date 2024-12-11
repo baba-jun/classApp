@@ -14,7 +14,7 @@ COPY . .
 # Build the application
 RUN go build -o main .
 
-RUN apt-get update && apt-get install -y git
+RUN apk update && apk add --no-cache git
 
 # Expose the API port
 EXPOSE 8080
