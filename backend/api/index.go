@@ -8,7 +8,7 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	router := gin.Default()
+	router := gin.New()
 
 	// CORSミドルウェアの設定
 	router.Use(cors.New(cors.Config{
@@ -25,6 +25,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		})
 	})
 
-	// サーバー起動
-	router.Run(":8080")
+	// リクエストを処理
+	router.ServeHTTP(w, r)
 }
