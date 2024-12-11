@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>{message}</h1>
+      <h1>{message}です</h1>
     </div>
   );
 }
