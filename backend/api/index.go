@@ -12,7 +12,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	// CORSミドルウェアの設定
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000", "https://class-app-hazel.vercel.app:8080"},
+		AllowOrigins:     []string{"http://localhost:3000", "https://class-app-hazel.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept"},
 		AllowCredentials: true,
