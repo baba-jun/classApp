@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [message, setMessage] = useState('');
-  const backend_url = process.env.BACKEND_URL || 'http://localhost:8080'
+  const backend_url = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8080'
 
   useEffect(() => {
     fetch(backend_url)
